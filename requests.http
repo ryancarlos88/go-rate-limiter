@@ -1,0 +1,25 @@
+GET http://localhost:8080/ HTTP/1.1
+X-Forwarded-For: 127.0.0.1
+
+###
+
+GET http://localhost:8080/ HTTP/1.1
+Authorization: API_KEY token1
+
+###
+
+GET http://localhost:8080/ HTTP/1.1
+Authorization: API_KEY token2
+
+###
+
+GET http://localhost:8080/ HTTP/1.1
+Authorization: API_KEY token3
+
+###
+
+GET http://localhost:8080/ HTTP/1.1
+Authorization: API_KEY t0k3nG0d
+
+###
+

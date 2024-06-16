@@ -1,0 +1,21 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - 8080:8080
+    environment:
+      - MAX_IP_REQUESTS=2
+      - TOKEN_1=token1
+      - MAX_TOKEN1_REQUESTS=3
+      - TOKEN_2=token2
+      - MAX_TOKEN2_REQUESTS=50
+      - TOKEN_3=token3
+      - MAX_TOKEN3_REQUESTS=100
+      - TOKEN_GOD=t0k3nG0d
+      - MAX_TOKEN_GOD_REQUESTS=1000000
+      - IP_LOCKOUT_TIME=10
+      - TOKEN_LOCKOUT_TIME=5
+      - REDIS_URL=redis://localhost:6379
+    volumes:
+      - ./data:/app/data
